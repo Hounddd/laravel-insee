@@ -13,7 +13,9 @@ return [
     |
     */
 
-    'consumer_key'    => env('INSEE_CONSUMER_KEY'),
-    'consumer_secret' => env('INSEE_CONSUMER_SECRET'),
+    'consumer_key'       => env('INSEE_CONSUMER_KEY'),
+    'consumer_secret'    => env('INSEE_CONSUMER_SECRET'),
+
+    'sirene_api_version' => env('INSEE_SIRENE_API_VERSION'),
 
 ];
