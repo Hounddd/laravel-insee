@@ -2,7 +2,8 @@
 
 This package is a Laravel wrapper allowing you to lookup SIREN and SIRET numbers of French businesses and nonprofit associations, attributed by [Insee](https://insee.fr/en/accueil) (Institut national de la statistique et des études économiques).
 
-Laravel Insee uses the [Sirene V3](https://api.insee.fr/catalogue/site/themes/wso2/subthemes/insee/pages/item-info.jag?name=Sirene&version=V3&provider=insee) API.
+Laravel Insee uses the [Sirene](https://api.insee.fr/catalogue/) API in his latest version.  
+The configuration file and environment variables allow you to specify an API version to be used.  
 
 ## Installation
 
@@ -44,6 +45,7 @@ Then, you can add your production keys as environment variables in your `.env` f
 ```
 INSEE_CONSUMER_KEY=
 INSEE_CONSUMER_SECRET=
+INSEE_SIRENE_API_VERSION=
 ```
 
 Optionally, you can edit the name of these variables by publishing the configuration file:
@@ -64,11 +66,6 @@ Insee::siret('840 745 111 00012');
 
 - [Nicolas Spehler](https://nspehler.com)
 - [Moon](https://moon.xyz)
-
-## Testing
-<img src="https://dev.ls.agency/img/BrowserStack-Logo.svg" width="250" height="54">  
-
-This project uses [BrowserStack](https://browserstack.com) for cross browser testing. We're grateful for their contribution to the open source community.
 
 ## License
 The MIT License (MIT). Please see [License File](LICENSE) for more information.
